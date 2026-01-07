@@ -1,0 +1,23 @@
+# Näidisandmed testimiseks
+# Kasuta neid andmeid programmi testimisel
+
+# Õnnitluste näidised (3 tk):
+# 1. Rahulikke pühi!
+# 2. Head uut aastat!
+# 3. Säravaid jõule!
+
+# Saajate näidised (3 tk):
+# 1. mari@test.ee
+# 2. peeter@test.ee
+# 3. kalle@test.ee
+
+# Programmi käivitamiseks:
+# python joulutervitused.py
+
+# MÄRKUS: E-kirjade saatmiseks pead muutma onnitleja.py failis
+# saada_kiri() funktsioonis saatja_email ja saatja_parool väärtused.
+# 
+# Gmail'i kasutamiseks:
+# 1. Logi sisse oma Gmail kontole
+# 2. Luba "Less secure app access" või kasuta "App Password"
+# 3. App Password saamiseks: Google Account -> Security -> 2-Step Verification -> App passwords
