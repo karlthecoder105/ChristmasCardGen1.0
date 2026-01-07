@@ -1,38 +1,38 @@
-# ?? Jõuluõnnitluste Süsteem
+# JÃµuluÃµnnitluste SÃ¼steem
 
-Interaktiivne Pythoni programm jõuluõnnitluste genereerimiseks ja saatmiseks e-posti teel.
+Interaktiivne Pythoni programm jÃµuluÃµnnitluste genereerimiseks ja saatmiseks e-posti teel.
 
-## ?? Kirjeldus
+##  Kirjeldus
 
-See projekt on loodud õppeeesmärkidel ja demonstreerib Pythoni põhilisi kontseptsioone:
+See projekt on loodud ÃµppeeesmÃ¤rkidel ja demonstreerib Pythoni pÃµhilisi kontseptsioone:
 - Moodulite kasutamine
 - Funktsioonid ja andmestruktuurid (listid)
-- Veakäsitlus (try/except)
-- Lõpmatu tsükkel kasutajaliidese jaoks
+- VeakÃ¤sitlus (try/except)
+- LÃµpmatu tsÃ¼kkel kasutajaliidese jaoks
 - E-kirjade saatmine SMTP protokolli abil
 
-Programm võimaldab kasutajal:
-- Koguda õnnitluste tekste
+Programm vÃµimaldab kasutajal:
+- Koguda Ãµnnitluste tekste
 - Koguda saajate e-posti aadresse
-- Genereerida juhuslikke õnnitlusi
-- Saata õnnitlusi e-posti teel
+- Genereerida juhuslikke Ãµnnitlusi
+- Saata Ãµnnitlusi e-posti teel
 
-## ??? Projektikuvaus
+##  Projektikuvaus
 
 ```
 ChristmasCardGen1.0/
-??? joulutervitused.py      # Põhiprogramm (käivita see fail)
-??? onnitleja.py             # Moodulfail andmetöötlusega
-??? naidisandmed.txt         # Näidisandmed testimiseks
+??? joulutervitused.py      # PÃµhiprogramm (kÃ¤ivita see fail)
+??? onnitleja.py             # Moodulfail andmetÃ¶Ã¶tlusega
+??? naidisandmed.txt         # NÃ¤idisandmed testimiseks
 ??? ChristmasCardGen1.0.py   # Info fail
 ??? README.md                # See fail
 ```
 
-## ?? Kuidas alustada
+##  Kuidas alustada
 
 ### Eeldused
 
-- Python 3.6 või uuem
+- Python 3.6 vÃµi uuem
 - Pythoni standardteegid: `smtplib`, `email`, `random`
 
 ### Installeerimine
@@ -43,64 +43,64 @@ git clone https://github.com/karlthecoder105/ChristmasCardGen1.0.git
 cd ChristmasCardGen1.0
 ```
 
-2. Python on juba vajalike teekidega varustatud, täiendavat installimist pole vaja.
+2. Python on juba vajalike teekidega varustatud, tÃ¤iendavat installimist pole vaja.
 
-### Programmi käivitamine
+### Programmi kÃ¤ivitamine
 
 ```bash
 python joulutervitused.py
 ```
 
-## ?? Kasutamine
+##  Kasutamine
 
 ### 1. Esmane seadistamine
 
-Programmi käivitamisel küsitakse:
-- **Soovide arv** ja nende tekstid (nt "Rahulikke pühi!")
+Programmi kÃ¤ivitamisel kÃ¼sitakse:
+- **Soovide arv** ja nende tekstid (nt "Rahulikke pÃ¼hi!")
 - **Saajate arv** ja nende e-posti aadressid
 
-**Näidisandmed testimiseks:**
+**NÃ¤idisandmed testimiseks:**
 
 Soovid:
-- Rahulikke pühi!
+- Rahulikke pÃ¼hi!
 - Head uut aastat!
-- Säravaid jõule!
+- SÃ¤ravaid jÃµule!
 
 Saajad:
 - mari@test.ee
 - peeter@test.ee
 - kalle@test.ee
 
-### 2. Menüü valikud
+### 2. MenÃ¼Ã¼ valikud
 
-Pärast andmete sisestamist kuvatakse menüü:
+PÃ¤rast andmete sisestamist kuvatakse menÃ¼Ã¼:
 
 ```
-1 - Õnnitle kõiki saajaid
-2 - Õnnitle ühte konkreetset saajat
-3 - Õnnitle mitut saajat (komaga eraldatud)
-0 - Välju programmist
+1 - Ã•nnitle kÃµiki saajaid
+2 - Ã•nnitle Ã¼hte konkreetset saajat
+3 - Ã•nnitle mitut saajat (komaga eraldatud)
+0 - VÃ¤lju programmist
 ```
 
-#### Valik 1: Õnnitle kõiki saajaid
-Genereerib juhuslikud õnnitlused kõigile sisestatud saajatele.
+#### Valik 1: Ã•nnitle kÃµiki saajaid
+Genereerib juhuslikud Ãµnnitlused kÃµigile sisestatud saajatele.
 
-#### Valik 2: Õnnitle ühte konkreetset saajat
-Küsib konkreetse e-posti aadressi ja genereerib sellele õnnitluse.
+#### Valik 2: Ã•nnitle Ã¼hte konkreetset saajat
+KÃ¼sib konkreetse e-posti aadressi ja genereerib sellele Ãµnnitluse.
 
-#### Valik 3: Õnnitle mitut saajat
-Võimaldab sisestada mitu e-posti aadressi komaga eraldatuna (nt `mari@test.ee, peeter@test.ee`).
+#### Valik 3: Ã•nnitle mitut saajat
+VÃµimaldab sisestada mitu e-posti aadressi komaga eraldatuna (nt `mari@test.ee, peeter@test.ee`).
 
-#### Valik 0: Välju
-Lõpetab programmi töö.
+#### Valik 0: VÃ¤lju
+LÃµpetab programmi tÃ¶Ã¶.
 
 ### 3. E-kirjade saatmine
 
-Pärast õnnitluste genereerimist küsitakse, kas soovid saata e-kirjad. Selleks tuleb eelnevalt konfigureerida e-posti andmed.
+PÃ¤rast Ãµnnitluste genereerimist kÃ¼sitakse, kas soovid saata e-kirjad. Selleks tuleb eelnevalt konfigureerida e-posti andmed.
 
-## ?? E-posti konfiguratsioon
+##  E-posti konfiguratsioon
 
-E-kirjade saatmiseks pead muutma `onnitleja.py` failis `saada_kiri()` funktsioonis järgmisi väärtusi:
+E-kirjade saatmiseks pead muutma `onnitleja.py` failis `saada_kiri()` funktsioonis jÃ¤rgmisi vÃ¤Ã¤rtusi:
 
 ```python
 saatja_email = "sinu.email@gmail.com"  # Sinu e-posti aadress
@@ -114,51 +114,51 @@ saatja_parool = "sinu_rakenduse_parool"  # Rakenduse parool
 3. Luba 2-sammuline autentimine
 4. Genereeri rakenduse parool:
    - Google Account ? Security ? 2-Step Verification ? App passwords
-5. Kasuta genereeritud parooli `saatja_parool` väärtusena
+5. Kasuta genereeritud parooli `saatja_parool` vÃ¤Ã¤rtusena
 
-**Tähelepanu:** Ära jaga oma parooli teistega ega lisa seda avalikku repositooriumi!
+**TÃ¤helepanu:** Ã„ra jaga oma parooli teistega ega lisa seda avalikku repositooriumi!
 
-## ??? Tehnilised detailid
+##  Tehnilised detailid
 
 ### Moodulfail (onnitleja.py)
 
 - `kogu_soovid()` - Kogub kasutajalt soovide tekstid
 - `kogu_saajad()` - Kogub kasutajalt e-posti aadressid (valideerib '@' olemasolu)
 - `genereeri_juhuslik_soov(soovide_list)` - Valib juhuslikult soovi listist
-- `koosta_onnitlused(valitud_saajad=None)` - Koostab õnnitlused saajatele
+- `koosta_onnitlused(valitud_saajad=None)` - Koostab Ãµnnitlused saajatele
 - `saada_kiri(saaja, sisu)` - Saadab e-kirja SMTP kaudu
 
-### Põhiprogramm (joulutervitused.py)
+### PÃµhiprogramm (joulutervitused.py)
 
-- Impordib kõik vajalikud funktsioonid moodulist
+- Impordib kÃµik vajalikud funktsioonid moodulist
 - Kogub esmased andmed (soovid ja saajad)
-- Käivitab lõpmatu menüütsükli
-- Käsitleb kasutaja valikuid
-- Haldab veakäsitlust
+- KÃ¤ivitab lÃµpmatu menÃ¼Ã¼tsÃ¼kli
+- KÃ¤sitleb kasutaja valikuid
+- Haldab veakÃ¤sitlust
 
-## ?? Veakäsitlus
+##  VeakÃ¤sitlus
 
-Programm käsitleb järgmisi vigu:
+Programm kÃ¤sitleb jÃ¤rgmisi vigu:
 
 - **ValueError**: Kui kasutaja sisestab arvu asemel teksti
-- **SMTPException**: E-kirja saatmise vead (autentimine, ühendus)
-- **Tühjade listide kontroll**: Hoiatab, kui soove pole lisatud
+- **SMTPException**: E-kirja saatmise vead (autentimine, Ã¼hendus)
+- **TÃ¼hjade listide kontroll**: Hoiatab, kui soove pole lisatud
 
-## ?? Õppematerjalid
+##  Ã•ppematerjalid
 
-Projekt põhineb Moodle'i materjali: https://moodle.edu.ee/mod/resource/view.php?id=2568200&redirect=1
+Projekt pÃµhineb Moodle'i materjali: https://moodle.edu.ee/mod/resource/view.php?id=2568200&redirect=1
 
-### Õpitud teemad:
-- ? Listid
-- ? Funktsioonid (def)
-- ? Moodulid
-- ? Lõpmatu tsükkel (while True)
-- ? Veakäsitlus (try/except)
-- ? SMTP e-kirjade saatmine
+### Ã•pitud teemad:
+-  Listid
+-  Funktsioonid (def)
+-  Moodulid
+-  LÃµpmatu tsÃ¼kkel (while True)
+-  VeakÃ¤sitlus (try/except)
+-  SMTP e-kirjade saatmine
 
-## ?? Panustamine
+##  Panustamine
 
-See on õppeprojekt. Kui soovid panustada:
+See on Ãµppeprojekt. Kui soovid panustada:
 1. Tee fork repositooriumist
 2. Loo uus branch (`git checkout -b feature/UusFunktsioon`)
 3. Tee oma muudatused
@@ -166,25 +166,26 @@ See on õppeprojekt. Kui soovid panustada:
 5. Push'i branch'i (`git push origin feature/UusFunktsioon`)
 6. Ava Pull Request
 
-## ?? Hoiatused
+## Hoiatused
 
-- Ära jaga oma e-posti paroole avalikult
-- Kasuta ainult testimiseks mõeldud e-posti aadresse
-- Gmail piirab päevas saadetavate e-kirjade arvu (umbes 500)
-- Programm on loodud õppeeesmärkidel, mitte tootmiskasutuseks
+- Ã„ra jaga oma e-posti paroole avalikult
+- Kasuta ainult testimiseks mÃµeldud e-posti aadresse
+- Gmail piirab pÃ¤evas saadetavate e-kirjade arvu (umbes 500)
+- Programm on loodud ÃµppeeesmÃ¤rkidel, mitte tootmiskasutuseks
 
-## ?? Litsents
+## Litsents
 
-See projekt on loodud õppeeesmärkidel ja on vabalt kasutatav.
+See projekt on loodud ÃµppeeesmÃ¤rkidel ja on vabalt kasutatav.
 
-## ?? Autor
+## Autor
 
 Karl-Lauri Puusepp
 
-## ?? Kontakt
+## Kontakt
 
-Kui sul on küsimusi või ettepanekuid, ava issue või võta ühendust läbi GitHub'i.
+Kui sul on kÃ¼simusi vÃµi ettepanekuid, ava issue vÃµi vÃµta Ã¼hendust lÃ¤bi GitHub'i.
 
 ---
 
-**Häid pühi! ?????**
+**HÃ¤id pÃ¼hi!**
+
