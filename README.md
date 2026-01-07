@@ -21,11 +21,11 @@ Programm võimaldab kasutajal:
 
 ```
 ChristmasCardGen1.0/
-??? joulutervitused.py      # Põhiprogramm (käivita see fail)
-??? onnitleja.py             # Moodulfail andmetöötlusega
-??? naidisandmed.txt         # Näidisandmed testimiseks
-??? ChristmasCardGen1.0.py   # Info fail
-??? README.md                # See fail
+joulutervitused.py      # Põhiprogramm (käivita see fail)
+ onnitleja.py             # Moodulfail andmetöötlusega
+ naidisandmed.txt         # Näidisandmed testimiseks
+ ChristmasCardGen1.0.py   # Info fail
+ README.md                # See fail
 ```
 
 ##  Kuidas alustada
@@ -188,4 +188,5 @@ Kui sul on küsimusi või ettepanekuid, ava issue või võta ühendust läbi Git
 ---
 
 **Häid pühi!**
+
 
